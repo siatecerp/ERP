@@ -6,8 +6,13 @@ spring:
     config:
       server:
         git:
-          default-label: main
-          uri: https://github.com/siatecerp/ERP.git
-          search-paths: config-data
+          uri: ${GIT_URI}
+          searchPaths: ${GIT_PATH}
+          username: ${GIT_USR}
+          password: ${GIT_PWD}
+          defaultLabel: ${GIT_LBL}
+          bootstrap: true
+        enable: true
+
   application:
     name: config-service

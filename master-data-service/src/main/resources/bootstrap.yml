@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    name: master-data-service
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
